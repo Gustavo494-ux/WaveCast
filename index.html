@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./src/style/grid-flex/cartao.css">
     <link rel="stylesheet" href="./src/style/grid-flex/index.css">
     <link rel="stylesheet" href="./src/style/grid-flex/navbar.css">
+    <link rel="stylesheet" href="./src/style/grid-flex/reproducao.css">
     
     <link rel="stylesheet" href="./src/style/base.css">
     <link rel="stylesheet" href="./src/style/responsivo.css">
@@ -21,7 +22,7 @@
 
 <body>
 
-    <header class="cabecalho container">
+    <!-- <header class="cabecalho container">
         <a href="#"><img class="cabecalho__logo" src="./src/imagens/Logos/CastWave_logo.svg" alt="Logo da WaveCast"></a>
         <button class="cabecalho__botao"><img src="./src/imagens/Icones/seta-voltar.svg" alt="Seta voltar"></button>
         <button class="cabecalho__botao cabecalho__botao__avancar"><img src="./src/imagens/Icones/seta-avancar.svg" alt="Seta avançar"></button>
@@ -248,7 +249,47 @@
             <li class="navbar__item navbar__item--busca"><form action="."><button aria-label="Botão acessar campo de busca"><img src="./src/imagens/Icones/search-branco.svg" alt="Logo do botão acessar campo de busca">Busca</button></form></li>
             <li class="navbar__item navbar__item--biblioteca"><form action="."><button aria-label="Botão acessar sua biblioteca"><img src="./src/imagens/Icones/bookmark-branco.svg" alt="Logo do botão acessar sua biblioteca">Sua Biblioteca</button></form></li>
         </ul>
-    </div>
+    </div> -->
+
+    <section class="barra-reproducao">
+        <a class="barra-reproducao__conteudo" href="#">
+            <img class="conteudo__imagem" src="./src/imagens/Imagens/dev-sem-fronteiras/dev-sem-fronteiras-90.png" alt="Dev sem Fronteiras - Engenheiro de Software em Tóquio, Japão">
+            <h3 class="conteudo__titulo">Android Jetpack</h3>
+            <h4 class="conteudo__subtitulo">Hipsters Ponto Tech</h4>
+        </a>
+        <div class="barra-reproducao__controles-reproducao">
+            <div class="controles-reproducao__container">
+                <button class="controles-reproducao__item">
+                    <img class="controles-reproducao__item__imagem" src="./src/imagens/Icones/replay-10.svg" alt="">    
+                </button>
+                <button class="controles-reproducao__item">
+                    <img class="controles-reproducao__item__imagem" src="./src/imagens/Icones/skip-previous.svg" alt="">    
+                </button>
+                <button class="botao-play-container controles-reproducao__item">
+                    <img class="controles-reproducao__item__imagem" src="./src/imagens/Icones/botao-play.svg" alt="">    
+                <button class="controles-reproducao__item">
+                    <img class="controles-reproducao__item__imagem" src="./src/imagens/Icones/skip-next.svg" alt="">    
+                </button>
+                <button class="controles-reproducao__item">
+                    <img class="controles-reproducao__item__imagem" src="./src/imagens/Icones/forward-10.svg" alt="">    
+                </button>
+            </div>            
+        </div>
+        <div class="barra-reproducao__temporizador">
+            <div class="temporizador__tempo-decorrido-container">
+                <span class="temporizador__tempo-decorrido__item">00:00</span>
+                <progress class="barra-progresso" value="100" max="100">70 %</progress>
+                <span class="temporizador__tempo-restante__item">18:35</span>
+            </div>           
+        </div>
+        <div class="barra-reproducao__controle-volume">
+            <div class="controle-volume__container">
+                <img class="controle-volume__item__imagem" src="./src/imagens/Icones/volume-down.svg" alt="">    
+                <progress class="" value="35" max="100"></progress>
+                <img class="controle-volume__item__imagem" src="./src/imagens/Icones/volume-up.svg" alt="">    
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
